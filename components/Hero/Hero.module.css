@@ -1,0 +1,214 @@
+.hero {
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 450px;
+}
+
+.buyButton {
+  padding: 14px 40px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 3rem;
+}
+
+.buyButton:hover {
+  background-color: #059669;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatars {
+  display: flex;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: -10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.reviewsText {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.reviewsText strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Правая часть с продуктом */
+.productSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Маленький кружок "m" сверху по центру */
+.topBadge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.circleGreen {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #10b981;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/* Звездочки */
+.starTop {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 2;
+}
+
+.starBottom {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  z-index: 2;
+}
+
+.arcText {
+  margin-bottom: -20px;
+  z-index: 1;
+}
+
+.productWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productOval {
+  width: 320px;
+  height: 420px;
+  background-color: #f0fdf4;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.headphones {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  margin-top: -20px;
+}
+
+.priceInside {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 10px;
+}
+
+.playVideo {
+  position: absolute;
+  bottom: 60px;
+  left: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.videoAvatarWrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #10b981;
+  padding: 3px;
+  background: white;
+}
+
+.videoAvatar {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .productOval {
+    width: 250px;
+    height: 340px;
+  }
+
+  .playVideo {
+    left: 0;
+    bottom: 20px;
+  }
+}
